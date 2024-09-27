@@ -28,6 +28,7 @@ const gallery = document.querySelector('.gallery');
 console.log(gallery);
 
 const galleryItems = images
+  .slice(0, 3)
   .map(image => {
     return `<li><img src="${image.url}" alt="${image.alt}" width="300"></li>`;
   })
