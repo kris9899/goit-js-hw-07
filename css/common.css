@@ -126,6 +126,13 @@ input {
   width: 360px;
   height: 40px;
   margin: 8px 0;
+  transition: border-color cubic-bezier(0.075, 0.82, 0.165, 1);
+  outline: none;
+}
+input:hover,
+input:focus,
+input:active {
+  border-color: #808080;
 }
 .login-form button {
   cursor: pointer;
@@ -141,6 +148,11 @@ input {
   letter-spacing: 0.04em;
   color: #fff;
   margin-top: 8px;
+  transition: background cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.login-form button:hover,
+.login-form button:focus {
+  background: #6c8cff;
 }
 /* Task 5 */
 .widget {
