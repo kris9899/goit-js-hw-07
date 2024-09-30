@@ -188,3 +188,91 @@ input:active {
   color: #fff;
   border: none;
 }
+
+/* Task 6 */
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  background: #f6f6fe;
+}
+#controls input {
+  justify-content: center;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 72px;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px;
+  width: 150px;
+  height: 40px;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+#controls button[data-create] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  padding: 8px 31px;
+  cursor: pointer;
+  transition: background cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#controls button[data-destroy] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #ff4e4e;
+
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-starts;
+  gap: 44px;
+  border-radius: 8px;
+  padding: 32px;
+  width: auto;
+  height: 134px;
+  background: #f6f6fe;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#controls button[data-create]:hover,
+#controls button[data-create]:focus {
+  background-color: #6c8cff;
+}
+#controls button[data-destroy]:hover,
+#controls button[data-destroy]:focus {
+  background-color: #ff7070;
+}
